@@ -40,6 +40,9 @@ namespace RPG.Combat
 
         private void AttackBehaviour()
         {
+            // look at enemy before attacking
+            transform.LookAt(target.transform);
+
             if(timeBetweenAttacks < timeSinceLastAttack)
             {
                 // this will trigger the Hit() event
@@ -59,7 +62,17 @@ namespace RPG.Combat
             return Vector3.Distance(transform.position, target.transform.position) < weaponRange;
         }
 
-        public void Attack(CombatTarget.CombatTarget combatTarget)
+        public bool CanAttack(CombatTarget combatTarget)
+        {
+            if (combatTarget == null) 
+            {
+                return false;
+            }
+            Health targetToTest = combatTarget.GetComponent<Health>();
+            return targetToTest != null && !targetToTest.IsDead();
+        }
+
+        public void Attack(CombatTarget combatTarget)
         {
             GetComponent<ActionScheduler>().StartAction(this);
             target = combatTarget.GetComponent<Health>();
