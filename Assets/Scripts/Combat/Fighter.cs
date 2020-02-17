@@ -12,7 +12,7 @@ namespace RPG.Combat
 
         Health target;
         Mover mover;
-        float timeSinceLastAttack = 0;
+        float timeSinceLastAttack = Mathf.Infinity;
 
         private void Start() 
         {
