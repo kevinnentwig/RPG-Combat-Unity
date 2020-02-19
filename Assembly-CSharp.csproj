@@ -57,6 +57,8 @@
      <Compile Include="Assets\Asset Packs\Fantasy Skybox FREE\Demo\Scripts\GE_FantasySkyboxFREE_UIs.cs" />
      <Compile Include="Assets\Asset Packs\GE Common Assets\GE Toggle Full Screen\Scripts\GE_ToggleFullScreenUI.cs" />
      <Compile Include="Assets\Asset Packs\GE Common Assets\Scripts\GE_UIResponder.cs" />
+     <Compile Include="Assets\Scripts\Cinematics\CinematicControlRemover.cs" />
+     <Compile Include="Assets\Scripts\Cinematics\CinematicTrigger.cs" />
      <Compile Include="Assets\Scripts\Combat\CombatTarget.cs" />
      <Compile Include="Assets\Scripts\Combat\Fighter.cs" />
      <Compile Include="Assets\Scripts\Control\AIController.cs" />
@@ -86,6 +88,12 @@
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
  <HintPath>D:/Documents/EDUCATION/UDEMY RPG CORE COMBAT CREATOR 2020/RPG PROJECT/RPG Project/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ </Reference>
+ <Reference Include="Cinemachine">
+ <HintPath>D:/Documents/EDUCATION/UDEMY RPG CORE COMBAT CREATOR 2020/RPG PROJECT/RPG Project/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ </Reference>
+ <Reference Include="com.unity.cinemachine.editor">
+ <HintPath>D:/Documents/EDUCATION/UDEMY RPG CORE COMBAT CREATOR 2020/RPG PROJECT/RPG Project/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
