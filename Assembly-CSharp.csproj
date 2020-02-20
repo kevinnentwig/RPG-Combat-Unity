@@ -68,12 +68,18 @@
      <Compile Include="Assets\Scripts\Core\FollowCamera.cs" />
      <Compile Include="Assets\Scripts\Core\Health.cs" />
      <Compile Include="Assets\Scripts\Core\IAction.cs" />
+     <Compile Include="Assets\Scripts\Core\PersistentObjectSpawner.cs" />
      <Compile Include="Assets\Scripts\Movement\Mover.cs" />
+     <Compile Include="Assets\Scripts\Scene Management\Fader.cs" />
+     <Compile Include="Assets\Scripts\Scene Management\Portal.cs" />
      <None Include="Assets\Asset Packs\Fantasy Skybox FREE\Readme.txt" />
      <None Include="Assets\Asset Packs\Animations\README - Usage Rights for these assets 1.txt" />
      <None Include="Assets\Asset Packs\Fantasy Skybox FREE\Fog and Ambient references.txt" />
      <None Include="Assets\Asset Packs\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
      <None Include="Assets\Asset Packs\GE Common Assets\Readme.txt" />
+ <Reference Include="Cinemachine">
+ <HintPath>D:/Documents/EDUCATION/UDEMY RPG CORE COMBAT CREATOR 2020/RPG PROJECT/RPG Project/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>D:/Documents/EDUCATION/UDEMY RPG CORE COMBAT CREATOR 2020/RPG PROJECT/RPG Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
@@ -83,17 +89,14 @@
  <Reference Include="Unity.CollabProxy.Editor">
  <HintPath>D:/Documents/EDUCATION/UDEMY RPG CORE COMBAT CREATOR 2020/RPG PROJECT/RPG Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="com.unity.cinemachine.editor">
+ <HintPath>D:/Documents/EDUCATION/UDEMY RPG CORE COMBAT CREATOR 2020/RPG PROJECT/RPG Project/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>D:/Documents/EDUCATION/UDEMY RPG CORE COMBAT CREATOR 2020/RPG PROJECT/RPG Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
  <HintPath>D:/Documents/EDUCATION/UDEMY RPG CORE COMBAT CREATOR 2020/RPG PROJECT/RPG Project/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
- </Reference>
- <Reference Include="Cinemachine">
- <HintPath>D:/Documents/EDUCATION/UDEMY RPG CORE COMBAT CREATOR 2020/RPG PROJECT/RPG Project/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
- </Reference>
- <Reference Include="com.unity.cinemachine.editor">
- <HintPath>D:/Documents/EDUCATION/UDEMY RPG CORE COMBAT CREATOR 2020/RPG PROJECT/RPG Project/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
