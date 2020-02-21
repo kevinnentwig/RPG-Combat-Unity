@@ -70,6 +70,10 @@
      <Compile Include="Assets\Scripts\Core\IAction.cs" />
      <Compile Include="Assets\Scripts\Core\PersistentObjectSpawner.cs" />
      <Compile Include="Assets\Scripts\Movement\Mover.cs" />
+     <Compile Include="Assets\Scripts\Saving\SaveableEntity.cs" />
+     <Compile Include="Assets\Scripts\Saving\SavingSystem.cs" />
+     <Compile Include="Assets\Scripts\Saving\SavingWrapper.cs" />
+     <Compile Include="Assets\Scripts\Saving\SerializableVector3.cs" />
      <Compile Include="Assets\Scripts\Scene Management\Fader.cs" />
      <Compile Include="Assets\Scripts\Scene Management\Portal.cs" />
      <None Include="Assets\Asset Packs\Fantasy Skybox FREE\Readme.txt" />
