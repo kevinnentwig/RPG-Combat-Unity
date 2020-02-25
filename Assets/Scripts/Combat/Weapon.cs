@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using RPG.Core;
+using UnityEngine;
 
 namespace RPG.Combat
 {
@@ -7,30 +8,50 @@ namespace RPG.Combat
     {
         [SerializeField] AnimatorOverrideController animatorOverride = null;
         [SerializeField] GameObject equippedPrefab = null;
+        [SerializeField] Projectile projectile = null;
         [SerializeField] float weaponDamage = 5f;
         [SerializeField] float weaponRange = 2f;
         [SerializeField] bool isRightHanded = true;
+
 
         public void Spawn(Transform rightHand, Transform leftHand, Animator animator)
         {
             if (equippedPrefab != null)
             {
-                Transform handTransform;
-                if (isRightHanded)
-                {
-                    handTransform = rightHand;
-                }
-                else
-                {
-                    handTransform = leftHand;
-                }
-                
+                Transform handTransform = GetTransform(rightHand, leftHand);
+
                 Instantiate(equippedPrefab, handTransform);
             }
             if (animatorOverride != null)
             {
                 animator.runtimeAnimatorController = animatorOverride;
             }
+        }
+
+        private Transform GetTransform(Transform rightHand, Transform leftHand)
+        {
+            Transform handTransform;
+            if (isRightHanded)
+            {
+                handTransform = rightHand;
+            }
+            else
+            {
+                handTransform = leftHand;
+            }
+
+            return handTransform;
+        }
+
+        public bool HasProjectile()
+        {
+            return projectile != null;
+        }
+
+        public void LaunchProjectile(Transform rightHand, Transform leftHand, Health target)
+        {
+            Projectile projectileInstance = Instantiate(projectile, GetTransform(rightHand, leftHand).position, Quaternion.identity);
+            projectileInstance.SetTarget(target, weaponDamage);
         }
 
         public float GetDamage()
