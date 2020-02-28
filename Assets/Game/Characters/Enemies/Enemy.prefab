@@ -166,6 +166,11 @@ PrefabInstance:
       propertyPath: leftHandTransform
       value: 
       objectReference: {fileID: 7636398187933202409}
+    - target: {fileID: 5770239139243897508, guid: f65d28bf08f5f554d9b01e4a41ec2499,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8297440369728087175, guid: f65d28bf08f5f554d9b01e4a41ec2499,
         type: 3}
       propertyPath: m_LocalPosition.x
