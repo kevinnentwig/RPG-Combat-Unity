@@ -45,6 +45,13 @@ namespace RPG.Resources
             GetComponent<ActionScheduler>().CancelCurrentAction();
         }
 
+        private void AwardExperience(GameObject instigator)
+        {
+            Experience experience = instigator.GetComponent<Experience>();
+            if (experience == null) return;
+            experience.GainExperience(GetComponent<BaseStats>().GetExperienceReward());
+        }
+
         public object CaptureState()
         {
            return healthPoints;
