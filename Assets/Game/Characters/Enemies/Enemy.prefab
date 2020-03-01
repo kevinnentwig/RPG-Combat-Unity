@@ -139,6 +139,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 2930297227106952553, guid: f65d28bf08f5f554d9b01e4a41ec2499,
+        type: 3}
+      propertyPath: characterClass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3767011688120207212, guid: f65d28bf08f5f554d9b01e4a41ec2499,
         type: 3}
       propertyPath: weapon
@@ -154,7 +159,7 @@ PrefabInstance:
         type: 3}
       propertyPath: defaultWeapon
       value: 
-      objectReference: {fileID: 11400000, guid: 404016b84b65ea540975c279b109e5dd,
+      objectReference: {fileID: 11400000, guid: 19401ac97e765a24cb95aa38587e4332,
         type: 2}
     - target: {fileID: 3767011688120207212, guid: f65d28bf08f5f554d9b01e4a41ec2499,
         type: 3}

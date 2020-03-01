@@ -402,6 +402,17 @@ PrefabInstance:
       propertyPath: weaponDamage
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5443863382464214922, guid: 8d84c213ab7b0e64da5e8805823755f6,
+        type: 3}
+      propertyPath: defaultWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 404016b84b65ea540975c279b109e5dd,
+        type: 2}
+    - target: {fileID: 6296560052407555471, guid: 8d84c213ab7b0e64da5e8805823755f6,
+        type: 3}
+      propertyPath: characterClass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7636398187945064859, guid: 8d84c213ab7b0e64da5e8805823755f6,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -688,6 +699,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6296560052407555471, guid: 8d84c213ab7b0e64da5e8805823755f6,
+        type: 3}
+      propertyPath: characterClass
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7809450850516955685, guid: 8d84c213ab7b0e64da5e8805823755f6,
         type: 3}
@@ -2960,6 +2976,11 @@ PrefabInstance:
       propertyPath: patrolPath
       value: 
       objectReference: {fileID: 365367600}
+    - target: {fileID: 6296560052407555471, guid: 8d84c213ab7b0e64da5e8805823755f6,
+        type: 3}
+      propertyPath: characterClass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7809450850516955685, guid: 8d84c213ab7b0e64da5e8805823755f6,
         type: 3}
       propertyPath: uniqueIdentifier
@@ -4207,7 +4228,8 @@ PrefabInstance:
       propertyPath: defaultWeaponName
       value: Unarmed
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3086281475951962679, guid: 8b2890a6a4c90824885d0a633696675d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8b2890a6a4c90824885d0a633696675d, type: 3}
 --- !u!1 &4446362477420707456
 GameObject:
