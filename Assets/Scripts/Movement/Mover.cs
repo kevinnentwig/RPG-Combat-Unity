@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 using RPG.Core;
-using RPG.Resources;
+using RPG.Attributes;
 using RPG.Saving;
 
 namespace RPG.Movement

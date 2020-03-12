@@ -2,7 +2,7 @@
 using RPG.Core;
 using RPG.Movement;
 using RPG.Combat;
-using RPG.Resources;
+using RPG.Attributes;
 using GameDevTV.Utils;
 
 namespace RPG.Control
