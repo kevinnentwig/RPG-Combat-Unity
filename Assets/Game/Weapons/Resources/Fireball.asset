@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Fireball
   m_EditorClassIdentifier: 
   animatorOverride: {fileID: 22100000, guid: d72199d3d093f514fac507a10563fe2d, type: 2}
-  equippedPrefab: {fileID: 3274805362286211284, guid: 71fa3f81b82f31148908c7957e07973c,
+  equippedPrefab: {fileID: 114506004161706654, guid: 71fa3f81b82f31148908c7957e07973c,
     type: 3}
   projectile: {fileID: 8090471282280471970, guid: 1e17034932f5aef448e009f46d51a810,
     type: 3}
   weaponDamage: 15
+  percentageBonus: 0
   weaponRange: 15
   isRightHanded: 0
