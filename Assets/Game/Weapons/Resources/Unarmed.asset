@@ -18,5 +18,5 @@ MonoBehaviour:
   projectile: {fileID: 0}
   weaponDamage: 0
   percentageBonus: 0
-  weaponRange: 2
+  weaponRange: 1.5
   isRightHanded: 1

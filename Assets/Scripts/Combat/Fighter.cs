@@ -1,12 +1,13 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
-using RPG.Movement;
-using RPG.Core;
-using RPG.Saving;
 using RPG.Attributes;
+using RPG.Core;
+using RPG.Movement;
+using RPG.Saving;
 using RPG.Stats;
 using GameDevTV.Utils;
-using System;
+
 
 namespace RPG.Combat
 {
@@ -18,7 +19,7 @@ namespace RPG.Combat
         [SerializeField] WeaponConfig defaultWeapon = null;
 
         Health target;
-        Mover mover;
+
         float timeSinceLastAttack = Mathf.Infinity;
         WeaponConfig currentWeaponConfig;
         LazyValue<Weapon> currentWeapon;
@@ -37,7 +38,6 @@ namespace RPG.Combat
         private void Start() 
         {
             currentWeapon.ForceInit();
-            mover = GetComponent<Mover>(); 
         }
 
         private void Update()
@@ -49,11 +49,11 @@ namespace RPG.Combat
 
             if (!GetIsInRange())
             {
-                mover.MoveTo(target.transform.position, 1f);
+                GetComponent<Mover>().MoveTo(target.transform.position, 1f);
             }
             else
             {
-                mover.Cancel();
+                GetComponent<Mover>().Cancel();
                 AttackBehaviour();
             }
         }
@@ -130,7 +130,8 @@ namespace RPG.Combat
 
         public bool CanAttack(GameObject combatTarget)
         {
-            if (combatTarget == null) return false;
+            if (combatTarget == null) { return false; }
+            if (!GetComponent<Mover>().CanMoveTo(combatTarget.transform.position)) { return false; }
             Health targetToTest = combatTarget.GetComponent<Health>();
             return targetToTest != null && !targetToTest.IsDead();
         }
@@ -145,7 +146,7 @@ namespace RPG.Combat
         {
             StopAttack();
             target = null;
-            mover.Cancel();
+            GetComponent<Mover>().Cancel();
         }
 
         private void StopAttack()
